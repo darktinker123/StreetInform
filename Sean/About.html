@@ -1,39 +1,76 @@
 <HTML>
 <!--Head Starts here-->
+
 <Head>
 	<Title>Street Info</title>
-	<link rel="stylesheet" href="Style.Css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/Experiment.Css" rel="stylesheet">
+
+	<!--Do not Touch this part unless bootstraps tells you so (start)-->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="JS/bootstrap.min.js"></script>
+
+
+	<!--Do not Touch this part unless bootstraps tells you so (End)-->
 </Head>
-<Body>
-	<Div Class="Container">
-		<Div Class="Wrapper">
-			<Div Class="Header">
-				<a href="Index.Html">
-				<img Class="logo" src="resources/Logo.png" alt="LOGO">
+
+<Body ID="About">
+	<!--Navigation Bar (start)-->
+	<nav class="navbar navbar-static-top">
+		<div class="Container-fluid">
+			<div class="navbar-header">
+
+				<!--Small Screen-->
+				<button type="button" class="navbar-toggle collapsed hover" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-list"></span> Menu
+				</button>
+
+				<!--Logo-->
+				<a class="navbar-brand" href="#">
+					<img src="resources/Logo.png" alt="LOGO">
 				</a>
-				    <div class="menu">
-				       <ul Class="menu">
-  					  <a href="Index.Html"><li>Home</li></a>
-  					  <a href="About.html"><li class="active">About</li></a>
-  				      <a href="Work.html"><li>Work</li></a>
-						<li>Features</li>
-						<li>Login</li>
-						<li>Contact Us</li>
-				       </ul>
-				    </div>
-			</Div>
-			<div Class="UBody">
-				<Div Class="BGBody">
-				
-				<h1 Class="SubTitle">What are you?</h1>
-				
-				<h4 Class="SemiTitle"> Please provide us your preference </h4>
-				
-				
-				
-				</div>
 			</div>
-		</Div>
-	</Div>
+			<!--List Buttons-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Index.html">Home</a></li>
+					<li><a class="active" href="About.html">About</a></li>
+					<li><a href="Work.Html">Work</a></li>
+					<!--Features Dropdown (start)-->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Locate</a></li>
+							<li><a href="#">Identify</a></li>
+							<li><a href="#">Inform</a></li>
+						</ul>
+					</li>
+					<!--Features Dropdown (end)-->
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--Navigation Bar (End)-->
+	<!--Body (Start)-->
+	<div ID="About-Body" class="full-screen">
+		<div class="Align-right">
+			<h1 class="C-About-Name">Grover Sean Reyes</h1>
+			<h1>-Programmer</h1>
+		</div>
+	</div>
+	<!--Body (End)-->
+
 </Body>
+
 </HTML>
