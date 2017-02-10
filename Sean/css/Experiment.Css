@@ -1,56 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body#Index {
-    background: url('../resources/Home_Background.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-body#About {
-    background: url('../resources/About_Background.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url('../resources/Home_Background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+body#About {
+  background: url('../resources/About_Background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .navbar-brand {
   height: auto;
 }
 
-
-.navbar-brand > img {
+.navbar-brand> img {
   height: 71px;
 }
 
-.nav >li >a {
+.nav>li>a {
   padding-right: 30px;
   padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 23px;
-  text-decoration:none;
+  text-decoration: none;
   font-weight: bold;
 }
 
-a{
+a {
   color: white;
 }
 
-.nav >li >a:hover {
+.nav>li>a:hover {
   background-color: Yellow;
   box-shadow: 0px 5px #bdbd08;
   color: black;
 }
-
 
 .navbar-toggle.collapsed.hover:hover {
   background-color: Yellow;
@@ -59,7 +56,7 @@ a{
 }
 
 .navbar-toggle:hover .icon-menu {
-    background-color: black;
+  background-color: black;
 }
 
 .navbar-toggle {
@@ -72,53 +69,56 @@ a{
 }
 
 .icon-menu {
-    background-color: White;
+  background-color: White;
 }
 
 #Home.col-md-2.col-md-offset-5 {
-    width: 100%;
-    margin-left: 34.667%;
+  width: 100%;
+  margin-left: 34.667%;
 }
+
 
 /*Change Collapse time*/
+
 @media (max-width: 1234px) {
   .navbar-header {
-      float: none;
+    float: none;
   }
-  .navbar-left,.navbar-right {
-      float: none !important;
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
   }
   .navbar-toggle {
-      display: block;
+    display: block;
   }
   .navbar-collapse {
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   .navbar-fixed-top {
-      top: 0;
-      border-width: 0 0 1px;
+    top: 0;
+    border-width: 0 0 1px;
   }
   .navbar-collapse.collapse {
-      display: none!important;
+    display: none!important;
   }
   .navbar-nav {
-      float: none!important;
-      margin-top: 7.5px;
+    float: none!important;
+    margin-top: 7.5px;
   }
   .navbar-nav>li {
-      float: none;
+    float: none;
   }
   .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
-  .collapse.in{
-      display:block !important;
+  .collapse.in {
+    display: block !important;
   }
 }
 
-.center.white{
+.center.white {
   width: 100%;
   text-align: center;
   color: white;
@@ -133,72 +133,130 @@ a{
 #PBtn.Btn {
   background-color: Yellow;
   box-shadow: 0px 5px #bdbd08;
+  justify-content: center;
+  align-items: center;
   color: black;
-  border:none;
+  border: none;
+  width: 157px;
+  height: 43px;
+  padding-top: 5px;
 }
 
 #DBtn.Btn {
   background-color: Yellow;
   box-shadow: 0px 5px #bdbd08;
+  justify-content: center;
+  align-items: center;
   color: black;
-  border:none;
+  border: none;
+  width: 157px;
+  height: 43px;
+  padding-top: 5px;
 }
 
-#PBtn.Btn > a {
+#PBtn.Btn> a {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
+  font-family: 'Open Sans', serif;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
 }
 
-#DBtn.Btn > a {
+#DBtn.Btn> a {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
+  font-family: 'Open Sans', serif;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
 }
 
 #Passenger.half {
-  display:flex;
-  Float:left;
-  width:50%;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  Float: left;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 #Driver.half {
-  display:flex;
-  Float:Right;
-  width:50%;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  Float: Right;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
-#About-Body.Full-Screen{
-  widht:100%;
+#About-Body.Full-Screen {
+  widht: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
-  right:0;
-  left:0;
+  right: 0;
+  left: 0;
 }
 
-#Index-Body.Full-Screen{
+#Index-Body.Full-Screen {
   Height: 400px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Align-right{
-  display:flex;
-  Float:Right;
-  width:50%;
+.Align-right {
+  display: flex;
+  Float: Right;
+  width: 50%;
   Height: 100%;
-  justify-content:left;
-  align-items:left;
-  background-color:#00000080;
+  justify-content: left;
+  align-items: left;
+  background-color: #00000080;
   padding-top: 102px;
 }
-.C-About-Name{
-  font-family: 'Open Sans',serif;
-  Color:White;
+
+.C-About-Name {
+  font-family: 'Open Sans', serif;
+  Color: White;
   font-size: 100px;
-  font-weight:900;
+  font-weight: 900;
+  width: 100%;
+}
+
+.C-About-Name-Title {
+  font-family: 'Open Sans', serif;
+  Color: White;
+  font-size: 40px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.C-About-Name-para {
+  font-family: 'Open Sans', serif;
+  Color: White;
+  font-size: 20.4px;
+  width: 92%;
+  padding-top: 52px;
+  padding-left: 0px;
+}
+
+.row {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.col-sm-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#PrfHomeBtn.col-sm-12 {
+  width: 1000px;
+  padding-top: 48px;
+}
+
+.full-widht {
+  widht: 100%;
 }
